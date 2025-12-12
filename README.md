@@ -222,15 +222,46 @@ document.addEventListener('click', (e)=>{
 });
 
 /* Регистрация/Вход — простая демонстрация */
+// Проверка email (наличие @)
+function validateEmail(email) {
+  if (!email.includes("@")) {
+    alert("Ошибка: e-mail должен содержать символ @");
+    return false;
+  }
+  return true;
+}
+
+/* --- Регистрация --- */
 document.getElementById('regBtn')?.addEventListener('click', ()=>{
+  const email = document.getElementById('regEmail').value.trim();
+  const pass = document.getElementById('regPass').value.trim();
+
+  if (!validateEmail(email)) return;
+
+  if (pass.length < 1) {
+    alert("Введите пароль");
+    return;
+  }
+
   alert('Регистрация (демо) — успешно');
   showSection('home');
 });
+
+/* --- Вход --- */
 document.getElementById('loginBtn')?.addEventListener('click', ()=>{
+  const email = document.getElementById('loginEmail').value.trim();
+  const pass = document.getElementById('loginPass').value.trim();
+
+  if (!validateEmail(email)) return;
+
+  if (pass.length < 1) {
+    alert("Введите пароль");
+    return;
+  }
+
   alert('Вход (демо) — успешно');
   showSection('home');
 });
-
 /* Кнопка оформления */
 document.getElementById('checkoutBtn')?.addEventListener('click', ()=>{
   if(cart.length === 0) { alert('Корзина пуста'); return; }
