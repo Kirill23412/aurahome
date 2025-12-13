@@ -151,8 +151,8 @@ showSection('home');
 
 /* --- Продукты (12 шт.) --- */
 const products = [
-  {name:"Диффузор вишня", price:599},
-  {name:"Диффузор клубника", price:599, img:"https://i.pinimg.com/736x/8c/3d/47/8c3d479d5ca7f20d0bb0e3b0a219c2f9.jpg"},
+  {name:"Диффузор вишня", price:599, img:"aurahome/600016264221b2.jpg"},
+  {name:"Диффузор клубника", price:599, img:"aurahome/клубника.jpg"},
   {name:"Диффузор лаванда", price:599, img:"https://i.pinimg.com/736x/31/12/4d/31124d8dbf54c1fac1e0adf7eecca40f.jpg"},
   {name:"Свеча малина", price:1199, img:"https://i.pinimg.com/736x/4e/51/25/4e5125acdea4ed52b21965b1b845a70d.jpg"},
   {name:"Свеча кофе", price:899, img:"https://i.pinimg.com/736x/48/df/6c/48df6c8d8a69dca38ae7cc1a2ddcaad4.jpg"},
